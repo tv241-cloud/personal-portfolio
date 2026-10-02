@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Thiago's Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
@@ -17,7 +18,7 @@
             <span>RBS</span> | Thiago's Portfolio
         </div>
 
-        <div>
+        <div class="nav-links">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
@@ -25,59 +26,113 @@
     </nav>
 
 
-    <!-- Introduction -->
-    <div class="hero" id="about">
+    <!-- About Section -->
+    <main>
 
-        <div class="hero-content">
+        <section class="hero" id="about">
 
-            <div class="tag">Rutgers Business School</div>
+            <div class="hero-content">
 
-            <h1>
-                Finance &amp; analysis,<br>
-                rooted at Rutgers.
-            </h1>
+                <div class="tag">Rutgers Business School</div>
 
-            <p>
-                I'm Thiago, a Finance student at Rutgers Business School
-                interested in financial analysis, business strategy,
-                and the music industry.
-            </p>
+                <h1>
+                    Finance &amp; analysis,<br>
+                    rooted at Rutgers.
+                </h1>
 
-        </div>
+                <!-- Personal Statement -->
+                <p>
+                    I'm Thiago, a Finance student at Rutgers Business School
+                    with interests in financial analysis, business strategy,
+                    and the music industry.
+                </p>
 
-    </div>
+            </div>
 
-
-    <!-- Skills -->
-    <section class="skills" id="skills">
-
-        <h2>Skills</h2>
-
-        <p>
-            Microsoft Excel • Financial Analysis • Financial Statements •
-            Ratio Analysis • Data Analysis
-        </p>
-
-    </section>
+        </section>
 
 
-    <!-- Projects -->
-    <section class="projects" id="projects">
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
 
-        <h2>Projects</h2>
+            <div class="section-container">
 
-        <div class="project-card">
+                <h2>Skills</h2>
 
-            <h3>Spotify Financial Analysis</h3>
+                <div class="skill-list">
+                    <span>Microsoft Excel</span>
+                    <span>Financial Analysis</span>
+                    <span>Financial Statement Analysis</span>
+                    <span>Ratio Analysis</span>
+                    <span>Data Analysis</span>
+                    <span>Microsoft Office</span>
+                </div>
 
-            <p>
-                Analyzed Spotify's financial statements, profitability,
-                margins, and key financial ratios using Microsoft Excel.
-            </p>
+            </div>
 
-        </div>
+        </section>
 
-    </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+
+            <div class="section-container">
+
+                <h2>Projects</h2>
+
+                <p class="section-description">
+                    A selection of finance projects completed using
+                    financial statements, company data, and Microsoft Excel.
+                </p>
+
+
+                <!-- Project 1 -->
+                <div class="project-card">
+
+                    <h3>Spotify Financial Analysis</h3>
+
+                    <p>
+                        Analyzed Spotify's financial statements, profitability,
+                        margins, and key financial ratios using Microsoft Excel
+                        to evaluate the company's financial performance.
+                    </p>
+
+                    <p class="project-tools">
+                        Excel • Financial Statements • Ratio Analysis
+                    </p>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="project-card">
+
+                    <h3>Music Industry Financial Analysis</h3>
+
+                    <p>
+                        Compared major companies in the music industry using
+                        revenue growth, operating margins, and business-model
+                        analysis across streaming, recorded music, publishing,
+                        and live entertainment.
+                    </p>
+
+                    <p class="project-tools">
+                        Excel • Financial Analysis • Industry Research
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Thiago | Rutgers Business School</p>
+    </footer>
 
 </body>
 
