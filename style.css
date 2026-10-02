@@ -1,7 +1,13 @@
+/* Basic Page Setup */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,7 +16,9 @@ body {
     color: #111827;
 }
 
-/* Navigation Bar */
+
+/* Navigation */
+
 nav {
     background-color: white;
     padding: 22px 12%;
@@ -21,7 +29,7 @@ nav {
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: bold;
 }
 
@@ -29,19 +37,24 @@ nav {
     color: #cc0033;
 }
 
-nav a {
+.nav-links a {
     color: #111827;
     text-decoration: none;
     margin-left: 30px;
     font-weight: 600;
 }
 
-/* Main Introduction */
+.nav-links a:hover {
+    color: #cc0033;
+}
+
+
+/* Introduction */
+
 .hero {
-    min-height: 520px;
+    min-height: 500px;
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 80px 15%;
 }
 
@@ -67,14 +80,22 @@ nav a {
 }
 
 .hero p {
+    max-width: 800px;
     font-size: 19px;
     line-height: 1.7;
     color: #5f6368;
 }
 
-/* Sections */
+
+/* General Sections */
+
 section {
     padding: 70px 15%;
+}
+
+.section-container {
+    max-width: 1000px;
+    margin: auto;
 }
 
 section h2 {
@@ -82,28 +103,50 @@ section h2 {
     margin-bottom: 25px;
 }
 
+
+/* Skills */
+
 .skills {
     background-color: white;
 }
 
-.skills p {
-    font-size: 18px;
-    line-height: 2;
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
+
+.skill-list span {
+    background-color: #f5f6f8;
+    border: 1px solid #e5e7eb;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+
+/* Projects */
 
 .projects {
     background-color: #f5f6f8;
 }
 
+.section-description {
+    color: #5f6368;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
 .project-card {
     background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    margin-top: 20px;
+    padding: 28px;
+    border-radius: 10px;
+    margin-bottom: 20px;
     border: 1px solid #e5e7eb;
 }
 
 .project-card h3 {
+    font-size: 21px;
     margin-bottom: 12px;
 }
 
@@ -112,13 +155,41 @@ section h2 {
     line-height: 1.6;
 }
 
-/* Mobile */
+.project-tools {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9b1c31 !important;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    color: #5f6368;
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* Mobile Devices */
+
 @media (max-width: 700px) {
+
     nav {
         padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 0 10px;
     }
 
     .hero {
+        min-height: 400px;
         padding: 60px 25px;
     }
 
@@ -129,4 +200,5 @@ section h2 {
     section {
         padding: 50px 25px;
     }
+
 }
